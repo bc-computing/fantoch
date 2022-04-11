@@ -134,7 +134,7 @@ build_fantoch() {
 
     # clone the repository if dir does not exist
     if [[ ! -d fantoch ]]; then
-        until git clone https://github.com/vitorenesduarte/fantoch -b "${branch}"; do
+        until git clone https://github.com/bc-computing/fantoch -b "${branch}"; do
             echo "git clone failed; trying again"
             rm -rf fantoch
         done
